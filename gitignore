@@ -1,0 +1,14 @@
+# Arquivos desnecessários
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporários
+~*
