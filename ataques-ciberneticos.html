@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ataques Cibernéticos: conheça os principais tipos de ataques hackers, como se proteger e o que fazer em caso de invasão.">
+    <meta name="keywords" content="ataques cibernéticos, hackers, malware, ransomware, DDoS, phishing, proteção">
+    <meta name="author" content="TechSec Blog">
+    <title>Ataques Cibernéticos e Como se Proteger: Guia Completo | TechSec Blog</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>TechSec Blog</span>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#artigos">Artigos</a>
+                    <a href="index.html#sobre">Sobre</a>
+                    <a href="index.html#contato">Contato</a>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <span>/</span>
+                <span>Ataques Cibernéticos</span>
+            </div>
+
+            <article class="article-content">
+                <!-- Article Header -->
+                <header class="article-header">
+                    <div class="article-category">
+                        <i class="fas fa-bug"></i> Ameaças
+                    </div>
+                    <h1>Ataques Cibernéticos e Como se Proteger: Guia Completo</h1>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> 02 de Junho de 2026</span>
+                        <span><i class="far fa-clock"></i> 16 min de leitura</span>
+                        <span><i class="fas fa-tag"></i> Ataques, Proteção, Hackers</span>
+                    </div>
+                </header>
+
+                <!-- Share Sidebar -->
+                <div class="share-sidebar">
+                    <button onclick="shareArticle('twitter')" title="Compartilhar no Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button onclick="shareArticle('linkedin')" title="Compartilhar no LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                    <button onclick="shareArticle('facebook')" title="Compartilhar no Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button onclick="shareArticle('whatsapp')" title="Compartilhar no WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    <button onclick="copyLink()" title="Copiar link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+
+                <!-- Article Summary -->
+                <div class="article-summary">
+                    <h3><i class="fas fa-list-ul"></i> Resumo do Artigo</h3>
+                    <p>Este guia completo explora os principais tipos de ataques cibernéticos que ameaçam indivíduos e empresas em 2026. Você aprenderá como identificar ameaças, implementar defesas eficazes e responder adequadamente em caso de invasão. Com exemplos reais e estratégias práticas de proteção.</p>
+                </div>
+
+                <!-- Introduction -->
+                <section>
+                    <h2><i class="fas fa-bullseye"></i> 1. Introdução</h2>
+                    <p>Vivemos na era da transformação digital, onde praticamente todas as atividades humanas — do trabalho ao entretenimento, das compras às relações sociais — acontecem online. Essa conectividade massiva trouxe inúmeros benefícios, mas também abriu portas para uma nova categoria de criminosos: os <strong>cibercriminosos</strong>.</p>
+                    
+                    <p>Ataques cibernéticos não são mais exclusividade de hackers solitários em filmes de Hollywood. Hoje, trata-se de uma <strong>indústria bilionária</strong>, com organizações criminosas sofisticadas operando globalmente, desenvolvendo malwares complexos e explorando vulnerabilidades em sistemas de todos os tamanhos.</p>
+
+                    <div class="info-box info-box-danger">
+                        <div class="info-box-icon">🚨</div>
+                        <div class="info-box-content">
+                            <h4>Panorama Global 2026</h4>
+                            <p>Segundo o relatório da Cybersecurity Ventures (2026), o custo global dos crimes cibernéticos deve atingir <strong>US$ 10,5 trilhões por ano</strong> em 2026. No Brasil, ataques cresceram <strong>42% em 2025</strong> em relação ao ano anterior (Kaspersky).</p>
+                        </div>
+                    </div>
+
+                    <p>Neste artigo, vamos explorar os principais tipos de ataques cibernéticos, entender como funcionam, conhecer casos reais que marcaram a história e, principalmente, aprender <strong>como se proteger</strong> de forma eficaz.</p>
+                </section>
+
+                <!-- Types of Attacks -->
+                <section>
+                    <h2><i class="fas fa-virus"></i> 2. Principais Tipos de Ataques Cibernéticos</h2>
+                    
+                    <p>Os ataques cibernéticos evoluem constantemente. Conhecer os principais tipos é o primeiro passo para se defender adequadamente.</p>
+
+                    <h3>2.1. Phishing (Pescaria Digital)</h3>
+                    <p>O <strong>phishing</strong> é uma das técnicas mais antigas e ainda mais eficazes. Consiste em enganar vítimas para que revelem informações confidenciais (senhas, dados bancários) através de mensagens falsas que se passam por empresas legítimas.</p>
+
+                    <h4>Como Funciona:</h4>
+                    <ul>
+                        <li>E-mails falsos imitando bancos, fintechs, e-commerces</li>
+                        <li>Links para sites clonados que parecem idênticos aos originais</li>
+                        <li>Senso de urgência: "Sua conta será bloqueada!"</li>
+                        <li>Anexos maliciosos disfarçados de documentos importantes</li>
+                    </ul>
+
+                    <div class="info-box info-box-warning">
+                        <div class="info-box-icon">📊</div>
+                        <div class="info-box-content">
+                            <h4>Estatística Alarmante</h4>
+                            <p><strong>91% dos ataques cibernéticos começam com phishing</strong> (Proofpoint, 2025). Em média, <strong>1 em cada 4 pessoas</strong> clica em links maliciosos em e-mails de phishing.</p>
+                        </div>
+                    </div>
+
+                    <h4>Variações do Phishing:</h4>
+                    <ul>
+                        <li><strong>Spear Phishing:</strong> Ataques direcionados a pessoas específicas (executivos, gerentes)</li>
+                        <li><strong>Whaling:</strong> Phishing visando CEOs e altos executivos</li>
+                        <li><strong>Smishing:</strong> Phishing via SMS</li>
+                        <li><strong>Vishing:</strong> Phishing por ligação telefônica</li>
+                    </ul>
+
+                    <h3>2.2. Ransomware (Sequestro de Dados)</h3>
+                    <p>O <strong>ransomware</strong> é um tipo de malware que criptografa os arquivos da vítima e exige pagamento (geralmente em Bitcoin) para liberá-los.</p>
+
+                    <h4>Características:</h4>
+                    <ul>
+                        <li>Criptografia forte (AES-256) torna arquivos inacessíveis</li>
+                        <li>Nota de resgate exibida na tela com prazo para pagamento</li>
+                        <li>Valores variam de R$ 1.000 (indivíduos) a milhões (empresas)</li>
+                        <li>Não há garantia de recuperação mesmo após pagamento</li>
+                    </ul>
+
+                    <div class="info-box info-box-danger">
+                        <div class="info-box-icon">💀</div>
+                        <div class="info-box-content">
+                            <h4>Caso Real: Ataque ao Colonial Pipeline (2021)</h4>
+                            <p>O maior oleoduto dos EUA foi paralisado por ransomware do grupo DarkSide. A empresa pagou <strong>US$ 4,4 milhões</strong> em resgate. O ataque causou escassez de combustível na costa leste americana.</p>
+                        </div>
+                    </div>
+
+                    <h4>Principais Famílias de Ransomware (2026):</h4>
+                    <ul>
+                        <li><strong>LockBit 4.0:</strong> O mais ativo globalmente</li>
+                        <li><strong>BlackCat/ALPHV:</strong> Escrito em Rust, muito eficiente</li>
+                        <li><strong>Royal:</strong> Foca em grandes empresas</li>
+                        <li><strong>Cl0p:</strong> Explora vulnerabilidades zero-day</li>
+                    </ul>
+
+                    <h3>2.3. Malware (Software Malicioso)</h3>
+                    <p>Termo genérico para qualquer software projetado para causar danos. Inclui:</p>
+
+                    <ul>
+                        <li><strong>Vírus:</strong> Se replica e infecta outros arquivos</li>
+                        <li><strong>Trojans:</strong> Se disfarçam de software legítimo</li>
+                        <li><strong>Worms:</strong> Se espalham automaticamente pela rede</li>
+                        <li><strong>Spyware:</strong> Monitora atividades sem consentimento</li>
+                        <li><strong>Keyloggers:</strong> Registram tudo que você digita</li>
+                        <li><strong>Rootkits:</strong> Escondem a presença de malware no sistema</li>
+                        <li><strong>Adware:</strong> Exibe propagandas indesejadas</li>
+                    </ul>
+
+                    <h3>2.4. DDoS (Distributed Denial of Service)</h3>
+                    <p>Ataques que sobrecarregam servidores com tráfego massivo, tornando sites e serviços inacessíveis.</p>
+
+                    <h4>Como Funciona:</h4>
+                    <ul>
+                        <li>Botnets (redes de dispositivos infectados) enviam milhões de requisições simultâneas</li>
+                        <li>Servidor não consegue processar tráfego legítimo</li>
+                        <li>Site fica fora do ar por horas ou dias</li>
+                    </ul>
+
+                    <div class="info-box info-box-info">
+                        <div class="info-box-icon">📈</div>
+                        <div class="info-box-content">
+                            <h4>Dados de Ataques DDoS</h4>
+                            <p>Em 2025, o maior ataque DDoS registrado atingiu <strong>3,47 Tbps</strong> (terabits por segundo) contra servidores da Microsoft Azure. O ataque durou 15 minutos mas gerou impacto significativo.</p>
+                        </div>
+                    </div>
+
+                    <h3>2.5. SQL Injection</h3>
+                    <p>Técnica que explora vulnerabilidades em bancos de dados de sites, permitindo acesso não autorizado a informações sensíveis.</p>
+
+                    <h4>Exemplo Simplificado:</h4>
+                    <p>Um site mal protegido pode aceitar entradas como:</p>
+                    <code style="background: #f3f4f6; padding: 10px; display: block; margin: 10px 0; border-left: 4px solid var(--primary-color);">
+                        ' OR '1'='1
+                    </code>
+                    <p>Isso pode burlar autenticação e expor todo o banco de dados.</p>
+
+                    <h3>2.6. Man-in-the-Middle (MitM)</h3>
+                    <p>Atacante intercepta comunicação entre duas partes sem que elas percebam.</p>
+
+                    <h4>Cenários Comuns:</h4>
+                    <ul>
+                        <li><strong>Redes Wi-Fi públicas:</strong> Hackers capturam dados transmitidos</li>
+                        <li><strong>Ataques a sites HTTP:</strong> Tráfego não criptografado é exposto</li>
+                        <li><strong>DNS Spoofing:</strong> Redirecionamento para sites falsos</li>
+                    </ul>
+
+                    <h3>2.7. Zero-Day Exploits</h3>
+                    <p>Ataques que exploram vulnerabilidades desconhecidas pelos fabricantes de software. São extremamente perigosos pois não há patches disponíveis.</p>
+
+                    <h3>2.8. Ataques de Engenharia Social</h3>
+                    <p>Manipulação psicológica para obter informações confidenciais. Exemplos:</p>
+                    <ul>
+                        <li><strong>Pretexting:</strong> Criação de cenários falsos para ganhar confiança</li>
+                        <li><strong>Baiting:</strong> Oferta de algo tentador (pen drive com malware)</li>
+                        <li><strong>Tailgating:</strong> Seguir alguém para entrar em área restrita</li>
+                        <li><strong>Quid Pro Quo:</strong> Oferecer ajuda em troca de informações</li>
+                    </ul>
+
+                    <div class="info-box info-box-warning">
+                        <div class="info-box-icon">🎭</div>
+                        <div class="info-box-content">
+                            <h4>Caso Real: Ataque ao Twitter (2020)</h4>
+                            <p>Hackers usaram engenharia social por telefone para enganar funcionários do Twitter e acessar ferramentas internas. Resultado: contas de Barack Obama, Elon Musk e Bill Gates foram comprometidas em esquema de Bitcoin.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Warning Signs -->
+                <section>
+                    <h2><i class="fas fa-exclamation-circle"></i> 3. Sinais de que Você Pode Estar Sob Ataque</h2>
+                    
+                    <p>Reconhecer os sinais precoces de um ataque pode minimizar danos significativamente.</p>
+
+                    <h3>3.1. Sinais em Dispositivos Pessoais</h3>
+                    <ul>
+                        <li>⚠️ <strong>Lentidão repentina:</strong> Sistema muito mais lento que o normal</li>
+                        <li>⚠️ <strong>Programas desconhecidos:</strong> Aplicativos que você não instalou</li>
+                        <li>⚠️ <strong>Pop-ups excessivos:</strong> Anúncios aparecendo constantemente</li>
+                        <li>⚠️ <strong>Antivírus desativado:</strong> Proteção desligada sem sua autorização</li>
+                        <li>⚠️ <strong>Arquivos criptografados:</strong> Extensões estranhas (.locked, .encrypted)</li>
+                        <li>⚠️ <strong>Atividade de rede incomum:</strong> Tráfego intenso sem explicação</li>
+                        <li>⚠️ <strong>Senha alterada:</strong> Não consegue acessar suas contas</li>
+                        <li>⚠️ <strong>E-mails não enviados:</strong> Mensagens na caixa de saída que você não escreveu</li>
+                    </ul>
+
+                    <h3>3.2. Sinais em Contas Online</h3>
+                    <ul>
+                        <li>🔔 Notificações de login de locais desconhecidos</li>
+                        <li>🔔 Compras ou transações não realizadas</li>
+                        <li>🔔 Amigos recebendo mensagens estranhas suas</li>
+                        <li>🔔 Alterações não autorizadas em perfis ou configurações</li>
+                        <li>🔔 E-mails de recuperação de senha que você não solicitou</li>
+                    </ul>
+
+                    <div class="info-box info-box-success">
+                        <div class="info-box-icon">💡</div>
+                        <div class="info-box-content">
+                            <h4>Ação Imediata</h4>
+                            <p>Se identificar qualquer destes sinais: <strong>desconecte-se da internet imediatamente</strong>, mude todas as senhas de um dispositivo seguro e execute uma varredura completa com antivírus atualizado.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Protection Strategies -->
+                <section>
+                    <h2><i class="fas fa-shield-virus"></i> 4. Como se Proteger: Estratégias de Defesa</h2>
+                    
+                    <p>A melhor defesa é uma combinação de <strong>tecnologia, processos e educação</strong>. Veja as estratégias mais eficazes:</p>
+
+                    <h3>4.1. Camada 1: Proteção Básica (Essencial para Todos)</h3>
+
+                    <h4>✓ Antivírus e Antimalware Atualizados</h4>
+                    <p>Soluções recomendadas para 2026:</p>
+                    <ul>
+                        <li><strong>Gratuitas:</strong> Windows Defender (integrado), Avast, AVG</li>
+                        <li><strong>Pagas:</strong> Kaspersky, Bitdefender, Norton 360, ESET</li>
+                    </ul>
+
+                    <h4>✓ Atualizações de Sistema e Software</h4>
+                    <p>Ative atualizações automáticas em:</p>
+                    <ul>
+                        <li>Sistema operacional (Windows, macOS, Linux)</li>
+                        <li>Navegadores (Chrome, Firefox, Edge, Safari)</li>
+                        <li>Aplicativos instalados (especialmente Adobe, Java, Office)</li>
+                    </ul>
+
+                    <h4>✓ Firewall Ativo</h4>
+                    <p>Mantenha o firewall do sistema operacional sempre ligado. Para proteção extra, considere firewalls de hardware em redes domésticas.</p>
+
+                    <h4>✓ Backup Regular (Regra 3-2-1)</h4>
+                    <ul>
+                        <li><strong>3</strong> cópias dos dados</li>
+                        <li><strong>2</strong> mídias diferentes (HD externo + nuvem)</li>
+                        <li><strong>1</strong> cópia offsite (fora do local físico)</li>
+                    </ul>
+
+                    <h3>4.2. Camada 2: Proteção Avançada</h3>
+
+                    <h4>✓ VPN (Virtual Private Network)</h4>
+                    <p>Criptografa sua conexão, especialmente importante em redes públicas.</p>
+                    <p><strong>Opções confiáveis:</strong> NordVPN, ExpressVPN, ProtonVPN, Surfshark</p>
+
+                    <h4>✓ Autenticação Multifator (MFA)</h4>
+                    <p>Como vimos no artigo sobre <a href="autenticacao-senhas.html">Autenticação e Senhas Seguras</a>, MFA reduz em 99,9% o risco de invasão.</p>
+
+                    <h4>✓ Navegação Segura</h4>
+                    <ul>
+                        <li>Use navegadores atualizados com bloqueadores de rastreadores</li>
+                        <li>Instale extensões de segurança: uBlock Origin, Privacy Badger</li>
+                        <li>Verifique se sites usam HTTPS (cadeado verde)</li>
+                        <li>Evite baixar arquivos de fontes desconhecidas</li>
+                    </ul>
+
+                    <h4>✓ E-mail Seguro</h4>
+                    <ul>
+                        <li>Desconfie de e-mails não solicitados</li>
+                        <li>Passe o mouse sobre links antes de clicar (veja URL real)</li>
+                        <li>Não abra anexos de remetentes desconhecidos</li>
+                        <li>Use filtros de spam robustos</li>
+                    </ul>
+
+                    <h3>4.3. Camada 3: Proteção Corporativa</h3>
+
+                    <h4>✓ Segmentação de Rede</h4>
+                    <p>Separe redes críticas de redes de convidados e dispositivos IoT.</p>
+
+                    <h4>✓ Sistema de Detecção de Intrusão (IDS)</h4>
+                    <p>Monitora tráfego de rede em busca de atividades suspeitas.</p>
+
+                    <h4>✓ Políticas de Segurança</h4>
+                    <ul>
+                        <li>Controle de acesso baseado em funções (RBAC)</li>
+                        <li>Princípio do menor privilégio</li>
+                        <li>Revisões periódicas de permissões</li>
+                    </ul>
+
+                    <h4>✓ Treinamento de Funcionários</h4>
+                    <p>Humanos são o elo mais fraco. Treinamentos regulares sobre phishing e engenharia social são fundamentais.</p>
+
+                    <div class="info-box info-box-info">
+                        <div class="info-box-icon">📊</div>
+                        <div class="info-box-content">
+                            <h4>ROI de Treinamentos</h4>
+                            <p>Empresas que realizam treinamentos trimestrais de segurança reduzem incidentes em até <strong>70%</strong> (IBM Security, 2025).</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Incident Response -->
+                <section>
+                    <h2><i class="fas fa-ambulance"></i> 5. O Que Fazer Se Você For Atacado</h2>
+                    
+                    <p>Mesmo com todas as precauções, ataques podem acontecer. Ter um plano de resposta pode minimizar danos.</p>
+
+                    <h3>5.1. Resposta Imediata (Primeiras Horas)</h3>
+
+                    <h4>1. ISOLE O DISPOSITIVO</h4>
+                    <ul>
+                        <li>Desconecte da internet (Wi-Fi e cabo)</li>
+                        <li>Desconecte de redes locais</li>
+                        <li>Remova dispositivos externos (pendrives, HDs)</li>
+                    </ul>
+
+                    <h4>2. NÃO DESLIGUE O COMPUTADOR</h4>
+                    <p>Evidências importantes podem estar apenas na memória RAM. Se possível, tire uma foto da tela.</p>
+
+                    <h4>3. MUDE SENHAS (de outro dispositivo)</h4>
+                    <ul>
+                        <li>E-mail principal</li>
+                        <li>Bancos e serviços financeiros</li>
+                        <li>Redes sociais</li>
+                        <li>Contas corporativas</li>
+                    </ul>
+
+                    <h4>4. NOTIFIQUE AS AUTORIDADES</h4>
+                    <ul>
+                        <li><strong>Brasil:</strong> Delegacia de Crimes Cibernéticos ou Polícia Federal</li>
+                        <li><strong>Registre um BO (Boletim de Ocorrência)</strong></li>
+                        <li><strong>Reporte ao CERT.br:</strong> https://www.cert.br/</li>
+                    </ul>
+
+                    <h3>5.2. Recuperação (Dias Seguintes)</h3>
+
+                    <h4>1. AVALIAÇÃO DE DANOS</h4>
+                    <ul>
+                        <li>Quais dados foram comprometidos?</li>
+                        <li>Existem backups recuperáveis?</li>
+                        <li>Sistemas críticos foram afetados?</li>
+                    </ul>
+
+                    <h4>2. LIMPEZA DO SISTEMA</h4>
+                    <ul>
+                        <li>Execute varredura completa com múltiplos antivírus</li>
+                        <li>Use ferramentas especializadas (Malwarebytes, HitmanPro)</li>
+                        <li>Em casos graves: formate e reinstale o sistema</li>
+                    </ul>
+
+                    <h4>3. RESTAURAÇÃO DE DADOS</h4>
+                    <ul>
+                        <li>Recupere de backups limpos (anteriores ao ataque)</li>
+                        <li>Verifique integridade dos arquivos restaurados</li>
+                        <li>Teste sistemas antes de colocar em produção</li>
+                    </ul>
+
+                    <h3>5.3. Pós-Incidente (Semanas Seguintes)</h3>
+
+                    <h4>1. ANÁLISE FORENSE</h4>
+                    <p>Entenda como o ataque ocorreu para prevenir reincidência:</p>
+                    <ul>
+                        <li>Ponto de entrada (e-mail, site, vulnerabilidade)</li>
+                        <li>Linha do tempo do ataque</li>
+                        <li>Extensão dos danos</li>
+                    </ul>
+
+                    <h4>2. IMPLEMENTAÇÃO DE MELHORIAS</h4>
+                    <ul>
+                        <li>Corrija vulnerabilidades identificadas</li>
+                        <li>Atualize políticas de segurança</li>
+                        <li>Reforce treinamentos</li>
+                    </ul>
+
+                    <h4>3. MONITORAMENTO CONTÍNUO</h4>
+                    <ul>
+                        <li>Acompanhe contas bancárias por fraudes</li>
+                        <li>Monitore crédito e documentos</li>
+                        <li>Fique atento a sinais de reinfecção</li>
+                    </ul>
+
+                    <div class="info-box info-box-warning">
+                        <div class="info-box-icon">⚠️</div>
+                        <div class="info-box-content">
+                            <h4>Importante: Ransomware</h4>
+                            <p>Autoridades e especialistas <strong>NÃO recomendam</strong> pagar resgate. Não há garantia de recuperação e o pagamento financia o crime organizado. Use backups como proteção.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Real Cases -->
+                <section>
+                    <h2><i class="fas fa-history"></i> 6. Casos Reais que Marcaram a História</h2>
+                    
+                    <p>Aprender com casos reais nos ajuda a entender a gravidade e as consequências dos ataques cibernéticos.</p>
+
+                    <h3>6.1. NotPetya (2017) - O Ataque Mais Caro da História</h3>
+                    <p><strong>Prejuízo estimado: US$ 10 bilhões</strong></p>
+                    <p>Disfarçado como ransomware, o NotPetya era na verdade um wiper (destruidor de dados). Afetou empresas globais como Maersk, Merck e FedEx. A Maersk teve que reinstalar <strong>4.000 servidores e 45.000 PCs</strong>.</p>
+
+                    <h3>6.2. SolarWinds (2020) - Ataque à Cadeia de Suprimentos</h3>
+                    <p>Hackers inseriram backdoor em atualização do software Orion. Comprometeu <strong>18.000 organizações</strong>, incluindo governo dos EUA, Microsoft, Intel e Cisco. Ataque atribuído à Rússia.</p>
+
+                    <h3>6.3. Equifax (2017) - Maior Vazamento de Dados</h3>
+                    <p>Dados pessoais de <strong>147 milhões de pessoas</strong> foram expostos. Incluía nomes, CPFs, endereços e números de cartões de crédito. Custo total: <strong>US$ 1,4 bilhão</strong>.</p>
+
+                    <h3>6.4. WannaCry (2017) - Ransomware Global</h3>
+                    <p>Infectou <strong>230.000 computadores em 150 países</strong> em um único dia. Explorou vulnerabilidade do Windows. Hospitais britânicos cancelaram cirurgias; fábricas pararam produção.</p>
+
+                    <h3>6.5. Ataque ao Banco Central do Bangladesh (2016)</h3>
+                    <p>Hackers roubaram <strong>US$ 81 milhões</strong> do Federal Reserve de Nova York usando credenciais comprometidas. Tentaram roubar US$ 951 milhões, mas um erro de digitação impediu.</p>
+
+                    <div class="info-box info-box-danger">
+                        <div class="info-box-icon">🇧🇷</div>
+                        <div class="info-box-content">
+                            <h4>Casos no Brasil</h4>
+                            <p><strong>2023:</strong> Superior Tribunal de Justiça (STJ) sofreu ataque ransomware que tirou sistemas do ar por semanas.<br>
+                            <strong>2024:</strong> Porto de Santos teve sistemas comprometidos, impactando logística.<br>
+                            <strong>2025:</strong> Prefeitura de São Paulo teve dados de 4 milhões de cidadãos vazados.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Future Trends -->
+                <section>
+                    <h2><i class="fas fa-crystal-ball"></i> 7. Tendências e Ameaças Futuras</h2>
+                    
+                    <p>O cenário de ameaças está em constante evolução. Fique atento a estas tendências para 2026-2027:</p>
+
+                    <h3>7.1. Ataques com Inteligência Artificial</h3>
+                    <ul>
+                        <li><strong>Deepfakes:</strong> Vídeos falsos realistas para fraudes</li>
+                        <li><strong>Phishing Personalizado:</strong> IA analisa perfis sociais para criar ataques sob medida</li>
+                        <li><strong>Malware Adaptativo:</strong> Códigos que evoluem para burlar defesas</li>
+                    </ul>
+
+                    <h3>7.2. Ataques a IoT (Internet das Coisas)</h3>
+                    <p>Com bilhões de dispositivos conectados (câmeras, fechaduras, eletrodomésticos), cada um é um ponto de entrada potencial.</p>
+
+                    <h3>7.3. Ransomware-as-a-Service (RaaS)</h3>
+                    <p>Criminosos alugam ferramentas de ransomware, democratizando ataques. Qualquer um pode se tornar atacante sem conhecimento técnico.</p>
+
+                    <h3>7.4. Ataques à Computação Quântica</h3>
+                    <p>Computadores quânticos poderão quebrar criptografias atuais. Corrida para desenvolver <strong>criptografia pós-quântica</strong> já começou.</p>
+
+                    <h3>7.5. Supply Chain Attacks</h3>
+                    <p>Foco em comprometer fornecedores para atingir alvos maiores, como visto no caso SolarWinds.</p>
+                </section>
+
+                <!-- Conclusion -->
+                <section>
+                    <h2><i class="fas fa-flag-checkered"></i> 8. Conclusão</h2>
+                    
+                    <p>Ataques cibernéticos são uma realidade inevitável do mundo digital. A questão não é <em>se</em> você será alvo, mas <em>quando</em>. A boa notícia é que a grande maioria dos ataques pode ser prevenida com <strong>medidas básicas de segurança</strong>.</p>
+
+                    <p>Não é necessário ser um especialista em segurança para se proteger. Seguir os princípios fundamentais — <strong>senhas fortes, MFA, backups, atualizações e consciência sobre ameaças</strong> — já coloca você à frente de 90% dos usuários.</p>
+
+                    <div class="highlight-box">
+                        <h4>🎯 Checklist de Segurança Imediata:</h4>
+                        <ol>
+                            <li>✓ Instale e ative antivírus atualizado</li>
+                            <li>✓ Habilite atualizações automáticas em todos os dispositivos</li>
+                            <li>✓ Configure MFA nas contas mais importantes</li>
+                            <li>✓ Crie um sistema de backup (3-2-1)</li>
+                            <li>✓ Use gerenciador de senhas</li>
+                            <li>✓ Instale VPN para uso em redes públicas</li>
+                            <li>✓ Eduque-se sobre phishing e engenharia social</li>
+                            <li>✓ Revise configurações de privacidade em redes sociais</li>
+                        </ol>
+                    </div>
+
+                    <p>A segurança cibernética é uma jornada contínua, não um destino. Mantenha-se informado, questione mensagens suspeitas e invista tempo em sua proteção digital. <strong>Seus dados, sua privacidade e sua paz de espírito agradecem!</strong></p>
+
+                    <p>Lembre-se: cibercriminosos procuram alvos fáceis. Não seja um. 🛡️</p>
+                </section>
+
+                <!-- References -->
+                <section>
+                    <h2><i class="fas fa-book"></i> Referências</h2>
+                    <ol>
+                        <li>Cybersecurity Ventures - Global Cybercrime Report (2026)</li>
+                        <li>Kaspersky Security Bulletin 2025 - Brazil Edition</li>
+                        <li>Verizon Data Breach Investigations Report (2025)</li>
+                        <li>IBM Cost of a Data Breach Report (2025)</li>
+                        <li>CERT.br - Centro de Estudos, Resposta e Tratamento de Incidentes (2026)</li>
+                        <li>Proofpoint State of the Phish Report (2025)</li>
+                        <li>Microsoft Digital Defense Report (2025)</li>
+                        <li>OWASP Top 10 Security Risks (2024)</li>
+                        <li>NIST Cybersecurity Framework (2024)</li>
+                        <li>Kaspersky DDoS Intelligence Report (2025)</li>
+                    </ol>
+                </section>
+
+                <!-- Author Info -->
+                <section class="author-info">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="author-details">
+                        <h3>Sobre o Autor</h3>
+                        <p>Artigo desenvolvido pela equipe do <strong>TechSec Blog</strong>, especializada em segurança da informação, privacidade digital e tecnologia. Nosso objetivo é educar e conscientizar sobre boas práticas de segurança no mundo digital.</p>
+                        <p><i class="fas fa-envelope"></i> Contato: <a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a></p>
+                    </div>
+                </section>
+
+                <!-- Related Articles -->
+                <section class="related-articles">
+                    <h2><i class="fas fa-newspaper"></i> Artigos Relacionados</h2>
+                    <div class="related-grid">
+                        <a href="autenticacao-senhas.html" class="related-card">
+                            <div class="related-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                            <div class="related-content">
+                                <h3>Autenticação e Senhas Seguras</h3>
+                                <p>Aprenda a criar senhas fortes e usar autenticação multifator para proteger suas contas.</p>
+                            </div>
+                        </a>
+                        <a href="artigo.html" class="related-card">
+                            <div class="related-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                            <div class="related-content">
+                                <h3>Segurança da Informação na Era Digital</h3>
+                                <p>Visão geral sobre desafios e perspectivas da segurança no mundo conectado.</p>
+                            </div>
+                        </a>
+                        <a href="privacidade.html" class="related-card">
+                            <div class="related-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                            <div class="related-content">
+                                <h3>Privacidade Online: Guia Completo</h3>
+                                <p>Proteja seus dados pessoais e navegue com segurança na internet.</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Comments Section -->
+                <section class="comments-section">
+                    <h2><i class="fas fa-comments"></i> Comentários</h2>
+                    <p>Tem dúvidas ou sugestões sobre o artigo? Entre em contato conosco!</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a></p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shield-alt"></i> TechSec Blog</h3>
+                    <p>Seu guia confiável sobre tecnologia, segurança da informação e transformação digital.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="index.html#artigos">Segurança</a></li>
+                        <li><a href="index.html#artigos">Privacidade</a></li>
+                        <li><a href="index.html#artigos">Criptografia</a></li>
+                        <li><a href="index.html#artigos">LGPD</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a></p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechSec Blog. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

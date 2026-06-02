@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artigo completo sobre Segurança da Informação na Era Digital - Desafios e Perspectivas">
+    <meta name="keywords" content="segurança da informação, cibersegurança, LGPD, proteção de dados, privacidade">
+    <meta name="author" content="TechSec Blog">
+    <title>Segurança da Informação na Era Digital | TechSec Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>TechSec Blog</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#artigos" class="active">Artigos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Article Header -->
+    <article class="article-page">
+        <div class="article-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+                    <span>/</span>
+                    <span>Artigo</span>
+                </div>
+                <h1 class="article-main-title">Segurança da Informação na Era Digital: Desafios e Perspectivas</h1>
+                <div class="article-meta-header">
+                    <div class="meta-item">
+                        <i class="far fa-calendar"></i>
+                        <span>11 de Fevereiro, 2026</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="far fa-clock"></i>
+                        <span>15 min de leitura</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-tag"></i>
+                        <span>Segurança da Informação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Share Buttons -->
+        <div class="share-sidebar">
+            <button class="share-btn" onclick="shareArticle('twitter')" title="Compartilhar no Twitter">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="share-btn" onclick="shareArticle('linkedin')" title="Compartilhar no LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </button>
+            <button class="share-btn" onclick="shareArticle('facebook')" title="Compartilhar no Facebook">
+                <i class="fab fa-facebook"></i>
+            </button>
+            <button class="share-btn" onclick="shareArticle('whatsapp')" title="Compartilhar no WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+            <button class="share-btn" onclick="copyLink()" title="Copiar link">
+                <i class="fas fa-link"></i>
+            </button>
+        </div>
+
+        <!-- Article Content -->
+        <div class="container">
+            <div class="article-content">
+                <!-- Resumo -->
+                <div class="article-abstract">
+                    <h3>Resumo</h3>
+                    <p>Este artigo explora os desafios contemporâneos da segurança da informação, analisando as principais ameaças cibernéticas, medidas de proteção e o impacto da legislação brasileira (LGPD) no contexto organizacional. A partir de uma abordagem reflexiva e fundamentada em casos práticos, discutimos como indivíduos e empresas podem se proteger em um cenário digital cada vez mais complexo.</p>
+                    <p><strong>Palavras-chave:</strong> Segurança da Informação, Cibersegurança, LGPD, Proteção de Dados, Privacidade Digital, Ameaças Cibernéticas</p>
+                </div>
+
+                <!-- Introdução -->
+                <section class="article-section">
+                    <h2>1. Introdução: Vivendo na Era da Exposição Digital</h2>
+                    <p>Sabe aquela sensação estranha quando você pensa em quantas informações pessoais estão espalhadas pela internet? Pois é, não é só você que se preocupa com isso. Vivemos numa era onde praticamente tudo que fazemos deixa um rastro digital – desde aquela busca aleatória no Google às 2h da manhã até as mensagens que trocamos no WhatsApp com os amigos.</p>
+                    
+                    <p>O que me fascina (e também assusta um pouco, confesso) é como a tecnologia se tornou tão integrada ao nosso dia a dia que nem paramos mais para pensar nisso. A gente acorda, pega o celular, checa as notificações, faz um Pix, responde e-mails, posta uma foto no Instagram... E em cada um desses momentos, informações estão sendo transmitidas, armazenadas, processadas. É fascinante e assustador ao mesmo tempo.</p>
+                    
+                    <p>Mas aqui está a questão: será que realmente entendemos o que acontece com esses dados? Quem tem acesso a eles? Como são protegidos? Ou será que simplesmente confiamos cegamente em que "alguém lá em cima" está cuidando disso pra gente?</p>
+                    
+                    <p>A verdade é que a segurança da informação deixou de ser apenas um assunto técnico, coisa de gente de TI. Hoje, ela afeta diretamente a vida de qualquer pessoa que use um smartphone – ou seja, praticamente todo mundo. E é justamente por isso que precisamos falar sobre esse tema de um jeito mais... humano, sabe? Sem aquele tecniquês que só confunde a cabeça da gente.</p>
+                </section>
+
+                <!-- Contexto e Importância -->
+                <section class="article-section">
+                    <h2>2. Por Que Isso Importa Tanto Assim?</h2>
+                    <p>Deixa eu te contar uma coisa: a economia digital brasileira movimentou mais de R$ 500 bilhões em 2025. Meio trilhão de reais circulando online! Isso inclui desde aquela compra que você fez na Shopee até transações bancárias complexas de grandes empresas. E quanto mais dinheiro e informação circulam digitalmente, mais atraente isso fica para quem quer fazer coisa errada.</p>
+                    
+                    <p>Quem nunca recebeu aquela mensagem estranha no WhatsApp, dizendo que você ganhou um prêmio que nem sabia que tinha concorrido? Ou aquele e-mail do "banco" pedindo para você clicar num link urgentemente? Pois é, essas são apenas as tentativas mais óbvias. As ameaças reais, as que realmente funcionam, são muito mais sofisticadas.</p>
+                    
+                    <p>E olha, não é só questão de perder dinheiro. Vazamentos de dados podem expor informações íntimas, comprometer a reputação de pessoas e empresas, e até colocar vidas em risco em casos mais extremos. Já pensou em ter suas conversas privadas, fotos pessoais ou dados médicos expostos publicamente? É o tipo de coisa que pode destruir carreiras e relacionamentos.</p>
+                    
+                    <div class="highlight-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p><strong>Dado importante:</strong> Segundo o relatório da Kaspersky, o Brasil foi o país mais atacado por ransomware na América Latina em 2025, com mais de 2 milhões de tentativas de ataque registradas. Isso dá quase 6 mil ataques por dia!</p>
+                    </div>
+                    
+                    <p>O problema é que muita gente ainda acha que "comigo não vai acontecer". Mas estatisticamente falando, se você usa a internet regularmente, é só uma questão de tempo até você ser alvo de alguma tentativa de ataque. A boa notícia? Com conhecimento básico de segurança, dá para se proteger da grande maioria dessas ameaças.</p>
+                </section>
+
+                <!-- Conceitos Fundamentais -->
+                <section class="article-section">
+                    <h2>3. Os Três Pilares: Entendendo a Base da Segurança</h2>
+                    <p>Quando a gente fala de segurança da informação de forma mais técnica, sempre esbarramos no que chamam de "tríade CIA" – não, não tem nada a ver com agentes secretos americanos (risos). CIA aqui é a sigla em inglês para Confidencialidade, Integridade e Disponibilidade. Deixa eu explicar cada um desses conceitos de um jeito mais simples:</p>
+                    
+                    <h3>3.1 Confidencialidade: Mantendo Segredos em Segredo</h3>
+                    <p>Basicamente, confidencialidade significa que só quem deve ter acesso a uma informação pode acessá-la. Pensa nas suas mensagens do WhatsApp – teoricamente, só você e a pessoa com quem você está conversando devem conseguir ler aquilo, certo? Isso é confidencialidade. Quando ela é quebrada, temos um vazamento de dados.</p>
+                    
+                    <p>No mundo real, isso se traduz em criptografia (aqueles códigos malucos que transformam sua mensagem em algo ilegível para quem não tem a "chave"), senhas fortes, autenticação de dois fatores, e por aí vai. É tipo ter um cofre dentro de outro cofre, dentro de uma sala trancada, em um prédio com segurança – várias camadas de proteção.</p>
+                    
+                    <h3>3.2 Integridade: Garantindo que Nada Foi Alterado</h3>
+                    <p>Agora imagina o seguinte cenário: você faz uma transferência bancária de R$ 100, mas alguém intercepta essa informação no meio do caminho e muda o valor para R$ 10.000. Assustador, né? A integridade serve justamente para garantir que as informações não sejam modificadas sem autorização durante o armazenamento ou transmissão.</p>
+                    
+                    <p>É por isso que existem aqueles "checksums" e assinaturas digitais – mecanismos que verificam se o que você enviou é exatamente o que chegou do outro lado. Se alguém mexer em alguma vírgula, o sistema detecta.</p>
+                    
+                    <h3>3.3 Disponibilidade: Estar Lá Quando Você Precisar</h3>
+                    <p>De que adianta ter todos os seus dados super seguros e protegidos se, quando você precisa deles, o sistema está fora do ar? A disponibilidade garante que as informações e sistemas estejam acessíveis quando necessário.</p>
+                    
+                    <p>Já ficou frustrado quando tentou acessar o aplicativo do banco e ele estava em manutenção justamente quando você precisava fazer um pagamento urgente? Pois é, disponibilidade é sobre evitar esse tipo de situação – seja por ataques DDoS (quando hackers sobrecarregam um sistema de propósito), falhas técnicas ou desastres naturais.</p>
+                    
+                    <div class="info-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <p><strong>Reflexão:</strong> Interessante notar que esses três pilares precisam estar em equilíbrio. Se você prioriza demais a confidencialidade, pode dificultar o acesso legítimo (prejudicando a disponibilidade). Se facilita demais o acesso, pode comprometer a confidencialidade. É um jogo constante de balanceamento.</p>
+                    </div>
+                </section>
+
+                <!-- Ameaças -->
+                <section class="article-section">
+                    <h2>4. As Ameaças: Conhecendo o Inimigo</h2>
+                    <p>Agora vamos falar da parte mais "emocionante" (no mau sentido): as ameaças que rondam nossos dados. E olha, tem de tudo – desde aqueles golpes toscos que qualquer um identifica até ataques super sofisticados que enganam até profissionais experientes.</p>
+                    
+                    <h3>4.1 Malware: O Termo Guarda-Chuva do Mal</h3>
+                    <p>Malware é aquele termo genérico para qualquer software malicioso. É tipo dizer "fruta" – maçã é uma fruta, banana é uma fruta, mas são coisas diferentes. Dentro do mundo malware, temos vírus (que se replicam infectando outros arquivos), worms (que se espalham sozinhos pela rede), trojans (que se disfarçam de programas legítimos), spyware (que te espionam silenciosamente), e por aí vai.</p>
+                    
+                    <p>O que mais me impressiona é como esses programas evoluíram. Antigamente, um vírus basicamente bagunçava seu computador por diversão. Hoje, malwares são verdadeiros negócios – organizações criminosas sofisticadas desenvolvem essas ferramentas para roubar dados, extorquir dinheiro, espionar pessoas... É uma indústria criminosa bilionária.</p>
+                    
+                    <h3>4.2 Phishing: A Arte do Engano Digital</h3>
+                    <p>Sabe aquele e-mail que parece ser do seu banco, com o logo certinho, o layout igual, mas tem alguma coisa estranha? Provavelmente é phishing – a técnica de se passar por uma entidade confiável para roubar suas informações.</p>
+                    
+                    <p>O mais interessante (e perigoso) é que phishing não é necessariamente um ataque tecnológico. É mais psicológico. Os criminosos estudam comportamento humano, exploram nossa pressa, nosso medo, nossa confiança. Eles sabem exatamente quais gatilhos emoccionais puxar para fazer você clicar naquele link ou fornecer suas senhas.</p>
+                    
+                    <p>E olha, não é só por e-mail não. Tem phishing por SMS (smishing), por telefone (vishing), por redes sociais... Os caras são criativos, tenho que admitir.</p>
+                    
+                    <h3>4.3 Ransomware: O Sequestro Digital</h3>
+                    <p>Esse aqui é talvez o mais assustador dos ataques modernos. O ransomware literalmente sequestra seus dados – criptografa todos os seus arquivos e exige um resgate (geralmente em criptomoedas) para devolvê-los.</p>
+                    
+                    <p>E não pense que é coisa pequena. Hospitais já tiveram que cancelar cirurgias porque seus sistemas foram atacados. Empresas quebraram porque perderam todos os seus dados. Em 2025, o ataque à Colonial Pipeline nos EUA mostrou como um ransomware pode até afetar o fornecimento de combustível de um país inteiro!</p>
+                    
+                    <p>O pior? Mesmo pagando o resgate, não há garantia de que você vai recuperar seus dados. É literalmente negociar com criminosos – eles não têm exatamente uma política de "satisfação garantida ou seu dinheiro de volta".</p>
+                    
+                    <h3>4.4 Engenharia Social: Hackeando Pessoas, Não Sistemas</h3>
+                    <p>Aqui está um segredo sujo da segurança da informação: o elo mais fraco não é a tecnologia, são as pessoas. E os hackers sabem disso muito bem.</p>
+                    
+                    <p>Engenharia social é quando atacantes manipulam pessoas para obter informações ou acesso. Pode ser tão simples quanto alguém ligando se passando pelo suporte técnico e pedindo sua senha, ou tão elaborado quanto criar um perfil falso e passar meses construindo confiança com alguém antes de fazer o golpe.</p>
+                    
+                    <p>Kevin Mitnick, um dos hackers mais famosos do mundo (que depois virou consultor de segurança), sempre dizia que era muito mais fácil enganar alguém a dar a senha do que tentar quebrá-la tecnicamente. E ele tinha razão – a maioria dos grandes vazamentos de dados acontece porque alguém caiu em algum golpe de engenharia social.</p>
+                    
+                    <div class="warning-box">
+                        <i class="fas fa-shield-virus"></i>
+                        <p><strong>Alerta de Segurança:</strong> Desconfie de qualquer solicitação urgente de informações confidenciais, mesmo que pareça vir de uma fonte legítima. Empresas sérias nunca pedem senhas ou dados bancários por e-mail ou telefone.</p>
+                    </div>
+                </section>
+
+                <!-- Proteção -->
+                <section class="article-section">
+                    <h2>5. Como Se Proteger: Dicas Práticas</h2>
+                    <p>Ok, falamos bastante sobre os problemas. Agora vamos ao que interessa: como se proteger de verdade? E olha, não precisa ser um gênio da computação para implementar a maior parte dessas medidas.</p>
+                    
+                    <h3>5.1 Criptografia: Seu Escudo Digital</h3>
+                    <p>Lembra que falamos sobre confidencialidade? Criptografia é a principal ferramenta para garantir isso. Basicamente, é transformar suas informações em um código que só pode ser decifrado com a chave certa.</p>
+                    
+                    <p>A boa notícia é que você provavelmente já usa criptografia sem nem saber. Aquele cadeado que aparece no navegador quando você acessa um site? É o HTTPS, que significa que a conexão está criptografada. O WhatsApp? Usa criptografia de ponta a ponta, o que significa que nem a própria empresa consegue ler suas mensagens (pelo menos em teoria).</p>
+                    
+                    <p>Para uso pessoal, recomendo fortemente usar VPN quando conectar em redes WiFi públicas, criptografar seus backups importantes, e sempre verificar se os sites que você acessa usam HTTPS – especialmente se você vai inserir informações sensíveis como dados de cartão de crédito.</p>
+                    
+                    <h3>5.2 Autenticação: Provando Quem Você É</h3>
+                    <p>Senhas. Ah, as senhas... Aquele tormento da nossa existência digital moderna. Mas infelizmente, ainda são necessárias.</p>
+                    
+                    <p>Primeiro, pare de usar "123456" ou "senha123" – sim, tem gente que ainda faz isso em 2026! Uma senha forte deveria ter pelo menos 12 caracteres, misturando letras maiúsculas e minúsculas, números e símbolos. E o mais importante: ser única para cada serviço.</p>
+                    
+                    <p>"Mas como vou lembrar de 50 senhas diferentes?", você pode estar se perguntando. Resposta: não precisa. Use um gerenciador de senhas como Bitwarden, 1Password ou LastPass. Eles guardam todas as suas senhas de forma segura, e você só precisa lembrar de uma senha mestra.</p>
+                    
+                    <p>E por favor, pelo amor de tudo que é sagrado, ative a autenticação de dois fatores (2FA) em todos os serviços importantes! É aquele sisteminha que pede um código extra além da senha – pode ser por SMS, aplicativo ou chave física. Sim, é um pouquinho mais chato, mas aumenta drasticamente sua segurança.</p>
+                    
+                    <h3>5.3 Backups: Seu Plano B (e C, e D...)</h3>
+                    <p>Existe um ditado na TI: não é questão de SE você vai perder dados, mas QUANDO. Por isso, backups são essenciais.</p>
+                    
+                    <p>A regra de ouro é o 3-2-1: ter pelo menos 3 cópias dos seus dados, em 2 mídias diferentes, com 1 cópia off-site (fora do local). Parece complicado? Vou simplificar: tenha seus arquivos no computador, uma cópia em um HD externo, e outra cópia na nuvem (Google Drive, Dropbox, OneDrive, etc.).</p>
+                    
+                    <p>E teste seus backups regularmente! Não adianta nada ter um backup que não funciona quando você precisa dele. Já vi casos de empresas que descobriram que seus backups estavam corrompidos justamente quando precisaram restaurá-los após um ataque. Não seja essa pessoa.</p>
+                    
+                    <h3>5.4 Atualizações: Aquele Lembrete Chato Que Você Deve Aceitar</h3>
+                    <p>Eu sei, eu sei... É extremamente tentador clicar em "lembrar mais tarde" quando aparece aquela notificação de atualização. Mas atualizações de segurança são cruciais!</p>
+                    
+                    <p>A maioria dos ataques explora vulnerabilidades conhecidas – falhas de segurança que já foram corrigidas, mas que ainda funcionam em sistemas desatualizados. O ataque WannaCry que mencionei antes? Só funcionou porque milhares de computadores estavam rodando versões antigas do Windows que não tinham sido atualizadas.</p>
+                    
+                    <p>Configure seus dispositivos para atualizar automaticamente sempre que possível. Vai evitar muita dor de cabeça no futuro.</p>
+                </section>
+
+                <!-- LGPD e Contexto Brasileiro -->
+                <section class="article-section">
+                    <h2>6. LGPD: A Lei Brasileira que Mudou o Jogo</h2>
+                    <p>Em 2020, o Brasil entrou oficialmente na era da proteção de dados com a Lei Geral de Proteção de Dados (LGPD). E olha, isso mudou bastante coisa – ou pelo menos deveria ter mudado.</p>
+                    
+                    <p>A LGPD é basicamente a versão brasileira do GDPR europeu (aquela lei que faz os sites perguntarem se você aceita cookies toda vez que visita). Ela estabelece regras sobre como empresas e organizações podem coletar, armazenar, processar e compartilhar dados pessoais.</p>
+                    
+                    <h3>6.1 Seus Direitos Como Titular de Dados</h3>
+                    <p>A LGPD te dá vários direitos importantes. Você pode solicitar que empresas te informem quais dados eles têm sobre você, pode pedir para corrigir informações incorretas, pode exigir a exclusão dos seus dados (o famoso "direito ao esquecimento"), e até pode transferir seus dados de um serviço para outro.</p>
+                    
+                    <p>Parece ótimo no papel, né? Na prática... bem, ainda estamos aprendendo. Muitas empresas ainda não implementaram processos adequados para atender esses direitos, e a ANPD (Autoridade Nacional de Proteção de Dados) ainda está estabelecendo como tudo isso vai funcionar na realidade.</p>
+                    
+                    <h3>6.2 Impacto nas Empresas</h3>
+                    <p>Do lado das empresas, a LGPD trouxe uma dor de cabeça considerável – mas necessária. Elas precisaram revisar completamente como coletam e tratam dados, nomear um encarregado de proteção de dados (DPO), implementar medidas de segurança adequadas, e criar processos para responder a solicitações dos titulares.</p>
+                    
+                    <p>E as multas? Podem chegar a R$ 50 milhões ou 2% do faturamento da empresa (o que for maior). Isso fez muita gente levar o assunto a sério rapidinho.</p>
+                    
+                    <p>O interessante é que a LGPD não afeta só grandes empresas. Se você tem um pequeno negócio e coleta dados de clientes – mesmo que seja só nome e e-mail para enviar newsletter – tecnicamente você precisa estar em conformidade com a lei. É um desafio grande, especialmente para PMEs com recursos limitados.</p>
+                </section>
+
+                <!-- Casos Práticos -->
+                <section class="article-section">
+                    <h2>7. Quando Tudo Dá Errado: Casos Reais</h2>
+                    <p>Nada como exemplos reais para entender a gravidade do assunto. Vamos falar de alguns casos que marcaram os últimos anos:</p>
+                    
+                    <h3>7.1 O Vazamento do Facebook (2019-2021)</h3>
+                    <p>Em 2021, dados de mais de 530 milhões de usuários do Facebook vazaram – incluindo números de telefone, nomes completos, localizações e e-mails. O mais irônico? O Facebook alegou que os dados foram coletados antes de 2019, explorando uma vulnerabilidade que já havia sido corrigida.</p>
+                    
+                    <p>Isso mostra duas coisas: primeiro, que dados antigos podem voltar para te assombrar; segundo, que mesmo gigantes da tecnologia não estão imunes a problemas de segurança.</p>
+                    
+                    <h3>7.2 Equifax: O Vazamento que Custou Bilhões (2017)</h3>
+                    <p>A Equifax, uma das maiores agências de crédito dos EUA, sofreu um vazamento que expôs informações sensíveis de 147 milhões de pessoas – incluindo números de seguro social, datas de nascimento, endereços e, em alguns casos, números de carteira de motorista.</p>
+                    
+                    <p>O pior? A vulnerabilidade explorada já tinha uma correção disponível há meses, mas a empresa não havia aplicado o patch. Isso custou à Equifax cerca de US$ 1,4 bilhão em acordos e remediação. E a confiança perdida? Essa não tem preço.</p>
+                    
+                    <h3>7.3 WannaCry: Quando Ransomware Vira Pandemia (2017)</h3>
+                    <p>Em maio de 2017, o mundo presenciou um dos maiores ataques de ransomware da história. O WannaCry infectou mais de 200 mil computadores em 150 países em questão de dias. Hospitais britânicos tiveram que cancelar cirurgias, empresas pararam de funcionar, foi o caos.</p>
+                    
+                    <p>A vulnerabilidade explorada? Uma falha no Windows que já tinha sido corrigida pela Microsoft dois meses antes. Novamente, o problema não foi tecnológico – foi humano. Sistemas não atualizados foram a porta de entrada.</p>
+                    
+                    <div class="case-box">
+                        <i class="fas fa-file-medical-alt"></i>
+                        <p><strong>Lição aprendida:</strong> Esses casos nos ensinam que segurança da informação não é só responsabilidade da equipe de TI. É cultural, organizacional. Uma empresa é tão segura quanto seu elo mais fraco – e muitas vezes, esse elo somos nós mesmos.</p>
+                    </div>
+                </section>
+
+                <!-- Conclusão -->
+                <section class="article-section">
+                    <h2>8. Considerações Finais: E Agora?</h2>
+                    <p>Depois de toda essa jornada pelos meandros da segurança da informação, talvez você esteja se sentindo um pouco paranóico. E olha, um pouquinho de paranóia saudável não faz mal nesse contexto.</p>
+                    
+                    <p>A verdade é que não existe segurança 100% perfeita. Sempre haverá riscos, sempre haverá vulnerabilidades. Mas isso não significa que devemos desistir ou ignorar o problema. Significa que precisamos estar conscientes, atentos e proativos.</p>
+                    
+                    <p>O que me deixa otimista é ver como a consciência sobre segurança digital tem aumentado. Há alguns anos, a maioria das pessoas não fazia ideia do que era phishing ou ransomware. Hoje, mesmo minha avó sabe que não deve clicar em links suspeitos (na maior parte do tempo, pelo menos).</p>
+                    
+                    <p>Empresas também estão levando o assunto mais a sério – seja por consciência ou por medo das multas da LGPD. O importante é que as coisas estão caminhando na direção certa, mesmo que lentamente.</p>
+                    
+                    <p>Então, o que você pode fazer a partir de agora? Comece pelo básico: senhas fortes e únicas, autenticação de dois fatores, backups regulares, e mantenha tudo atualizado. Desconfie de mensagens estranhas, mesmo que pareçam vir de pessoas conhecidas. E mais importante: eduque-se continuamente – a segurança digital é um campo em constante evolução.</p>
+                    
+                    <p>No final das contas, proteger nossas informações digitais é proteger nossa própria identidade, nossa privacidade, nossa autonomia. E isso, definitivamente, vale o esforço.</p>
+                    
+                    <p>Bom, espero que este artigo tenha sido útil de alguma forma. Se você chegou até aqui, obrigado pela paciência em ler esse textão todo! E lembre-se: na dúvida, sempre opte pela segurança. É melhor ser chamado de paranóico do que de vítima de um ataque cibernético.</p>
+                </section>
+
+                <!-- Referências -->
+                <section class="article-section references">
+                    <h2>Referências Bibliográficas</h2>
+                    <ol class="references-list">
+                        <li>STALLINGS, William; BROWN, Lawrie. <strong>Computer Security: Principles and Practice</strong>. 4th ed. Pearson, 2018.</li>
+                        <li>GOODRICH, Michael T.; TAMASSIA, Roberto. <strong>Introduction to Computer Security</strong>. Pearson, 2019.</li>
+                        <li>BRASIL. Lei nº 13.709, de 14 de agosto de 2018. <strong>Lei Geral de Proteção de Dados Pessoais (LGPD)</strong>. Brasília, DF: Diário Oficial da União, 2018.</li>
+                        <li>KASPERSKY. <strong>Cybersecurity Report 2025: Latin America</strong>. Disponível em: <a href="https://www.kaspersky.com" target="_blank">www.kaspersky.com</a>. Acesso em: 10 fev. 2026.</li>
+                        <li>MITNICK, Kevin D.; SIMON, William L. <strong>The Art of Deception: Controlling the Human Element of Security</strong>. Wiley, 2003.</li>
+                        <li>AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD). <strong>Guia Orientativo: Segurança da Informação</strong>. Brasília, 2022.</li>
+                        <li>SCHNEIER, Bruce. <strong>Click Here to Kill Everybody: Security and Survival in a Hyper-connected World</strong>. W. W. Norton & Company, 2018.</li>
+                        <li>CERT.BR - Centro de Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil. <strong>Cartilha de Segurança para Internet</strong>. Disponível em: <a href="https://cartilha.cert.br" target="_blank">cartilha.cert.br</a>. Acesso em: 10 fev. 2026.</li>
+                        <li>SYMANTEC. <strong>Internet Security Threat Report 2025</strong>. Disponível em: <a href="https://www.symantec.com" target="_blank">www.symantec.com</a>. Acesso em: 09 fev. 2026.</li>
+                        <li>NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST). <strong>Framework for Improving Critical Infrastructure Cybersecurity</strong>. Version 1.1. Gaithersburg, MD, 2018.</li>
+                    </ol>
+                </section>
+
+                <!-- Author Info -->
+                <div class="author-info">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="author-details">
+                        <h4>Sobre o Autor</h4>
+                        <p>Artigo desenvolvido para fins acadêmicos como parte das atividades complementares do curso. O conteúdo aborda aspectos fundamentais da segurança da informação com foco em aplicabilidade prática e relevância contemporânea.</p>
+                        <p style="margin-top: 1rem;"><strong>Contato:</strong> <a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Related Articles -->
+                <div class="related-articles">
+                    <h3>Artigos Relacionados</h3>
+                    <div class="related-grid">
+                        <div class="related-card">
+                            <i class="fas fa-lock"></i>
+                            <h4>Criptografia Moderna</h4>
+                            <p>Entendendo os algoritmos que protegem seus dados</p>
+                        </div>
+                        <div class="related-card">
+                            <i class="fas fa-user-shield"></i>
+                            <h4>Privacidade Online</h4>
+                            <p>Como proteger sua identidade digital</p>
+                        </div>
+                        <div class="related-card">
+                            <i class="fas fa-balance-scale"></i>
+                            <h4>LGPD na Prática</h4>
+                            <p>Guia completo para empresas e indivíduos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="comments-section">
+                    <h3>Comentários</h3>
+                    <p class="comments-info">Os comentários estão temporariamente desabilitados. Entre em contato através do e-mail <a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a> para discussões sobre o artigo.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shield-alt"></i> TechSec Blog</h3>
+                    <p>Compartilhando conhecimento sobre segurança da informação e tecnologia desde 2026.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="index.html#artigos">Artigos</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Criptografia</a></li>
+                        <li><a href="#">LGPD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechSec Blog. Todos os direitos reservados. | Contato: <a href="mailto:danielebertelliprado@gmail.com" style="color: #94a3b8;">danielebertelliprado@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autenticação e Senhas Seguras: aprenda a criar senhas fortes, usar autenticação multifator e proteger suas contas online contra acessos não autorizados.">
+    <meta name="keywords" content="autenticação, senhas seguras, MFA, 2FA, gerenciador de senhas, segurança de contas">
+    <meta name="author" content="TechSec Blog">
+    <title>Autenticação e Senhas Seguras: Protegendo suas Contas Online | TechSec Blog</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>TechSec Blog</span>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#artigos">Artigos</a>
+                    <a href="index.html#sobre">Sobre</a>
+                    <a href="index.html#contato">Contato</a>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <span>/</span>
+                <span>Autenticação e Senhas Seguras</span>
+            </div>
+
+            <article class="article-content">
+                <!-- Article Header -->
+                <header class="article-header">
+                    <div class="article-category">
+                        <i class="fas fa-lock"></i> Segurança
+                    </div>
+                    <h1>Autenticação e Senhas Seguras: Protegendo suas Contas Online</h1>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> 02 de Junho de 2026</span>
+                        <span><i class="far fa-clock"></i> 14 min de leitura</span>
+                        <span><i class="fas fa-tag"></i> Autenticação, Senhas, MFA</span>
+                    </div>
+                </header>
+
+                <!-- Share Sidebar -->
+                <div class="share-sidebar">
+                    <button onclick="shareArticle('twitter')" title="Compartilhar no Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button onclick="shareArticle('linkedin')" title="Compartilhar no LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                    <button onclick="shareArticle('facebook')" title="Compartilhar no Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button onclick="shareArticle('whatsapp')" title="Compartilhar no WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    <button onclick="copyLink()" title="Copiar link">
+                        <i class="fas fa-link"></i>
+                    </button>
+                </div>
+
+                <!-- Article Summary -->
+                <div class="article-summary">
+                    <h3><i class="fas fa-list-ul"></i> Resumo do Artigo</h3>
+                    <p>Neste artigo exploramos a importância crítica da autenticação segura e boas práticas para criação e gerenciamento de senhas. Você aprenderá sobre autenticação multifator (MFA), gerenciadores de senhas, técnicas para criar senhas fortes e os principais erros que comprometem a segurança das suas contas online.</p>
+                </div>
+
+                <!-- Introduction -->
+                <section>
+                    <h2><i class="fas fa-door-open"></i> 1. Introdução</h2>
+                    <p>Em um mundo cada vez mais digital, nossas identidades online são protegidas principalmente por um único elemento: <strong>a senha</strong>. Ela é a primeira linha de defesa entre nossos dados pessoais, financeiros e profissionais e possíveis invasores.</p>
+                    
+                    <p>Porém, estudos recentes mostram que <strong>mais de 80% dos ataques cibernéticos bem-sucedidos envolvem credenciais comprometidas</strong>. Senhas fracas, reutilizadas ou roubadas são a porta de entrada para hackers acessarem informações confidenciais.</p>
+
+                    <div class="info-box info-box-warning">
+                        <div class="info-box-icon">⚠️</div>
+                        <div class="info-box-content">
+                            <h4>Dados Alarmantes</h4>
+                            <p><strong>23 milhões de pessoas</strong> ainda usam "123456" como senha. No Brasil, <strong>65% dos usuários</strong> reutilizam a mesma senha em múltiplas contas, segundo pesquisa da Kaspersky (2025).</p>
+                        </div>
+                    </div>
+
+                    <p>Neste artigo, vamos entender como funcionam os sistemas de autenticação modernos, por que senhas fortes são essenciais, como criar e gerenciá-las de forma segura, e por que a autenticação multifator (MFA) se tornou indispensável nos dias de hoje.</p>
+                </section>
+
+                <!-- Why Strong Passwords Matter -->
+                <section>
+                    <h2><i class="fas fa-exclamation-triangle"></i> 2. Por que Senhas Fortes São Essenciais?</h2>
+                    
+                    <p>Senhas são a chave de acesso para praticamente tudo na internet: e-mails, redes sociais, bancos, serviços de streaming, aplicativos de trabalho e muito mais. Uma senha fraca é como deixar a porta da sua casa aberta.</p>
+
+                    <h3>2.1. Vulnerabilidades Comuns</h3>
+                    <p>As principais vulnerabilidades relacionadas a senhas incluem:</p>
+
+                    <ul>
+                        <li><strong>Senhas Fracas:</strong> Combinações óbvias como "senha123", "admin", datas de aniversário</li>
+                        <li><strong>Reutilização:</strong> Usar a mesma senha em vários serviços</li>
+                        <li><strong>Vazamentos:</strong> Credenciais expostas em data breaches</li>
+                        <li><strong>Phishing:</strong> Senhas roubadas por meio de sites falsos</li>
+                        <li><strong>Ataques de Força Bruta:</strong> Tentativas automatizadas de adivinhar senhas</li>
+                        <li><strong>Keyloggers:</strong> Softwares maliciosos que capturam tudo que você digita</li>
+                    </ul>
+
+                    <div class="info-box info-box-danger">
+                        <div class="info-box-icon">🚨</div>
+                        <div class="info-box-content">
+                            <h4>Caso Real: Vazamento do LinkedIn (2021)</h4>
+                            <p>Em 2021, dados de <strong>700 milhões de usuários do LinkedIn</strong> foram expostos e vendidos na dark web. Entre as informações estavam e-mails e senhas. Usuários que reutilizavam senhas tiveram múltiplas contas comprometidas.</p>
+                        </div>
+                    </div>
+
+                    <h3>2.2. Tempo para Quebrar Senhas</h3>
+                    <p>A força de uma senha é medida pelo tempo necessário para quebrá-la em um ataque de força bruta. Veja os dados atualizados (2026):</p>
+
+                    <table style="width: 100%; margin: 20px 0; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: var(--primary-color); color: white;">
+                                <th style="padding: 12px; text-align: left;">Tipo de Senha</th>
+                                <th style="padding: 12px; text-align: left;">Exemplo</th>
+                                <th style="padding: 12px; text-align: left;">Tempo para Quebrar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: #f9fafb;">
+                                <td style="padding: 12px;">6 caracteres (apenas números)</td>
+                                <td style="padding: 12px;">123456</td>
+                                <td style="padding: 12px; color: #dc2626;"><strong>Instantâneo</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px;">8 caracteres (minúsculas)</td>
+                                <td style="padding: 12px;">password</td>
+                                <td style="padding: 12px; color: #dc2626;"><strong>Menos de 1 minuto</strong></td>
+                            </tr>
+                            <tr style="background: #f9fafb;">
+                                <td style="padding: 12px;">8 caracteres (letras + números)</td>
+                                <td style="padding: 12px;">pass1234</td>
+                                <td style="padding: 12px; color: #f59e0b;"><strong>8 horas</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px;">12 caracteres (letras + números + símbolos)</td>
+                                <td style="padding: 12px;">P@ssw0rd#123</td>
+                                <td style="padding: 12px; color: #10b981;"><strong>200 anos</strong></td>
+                            </tr>
+                            <tr style="background: #f9fafb;">
+                                <td style="padding: 12px;">16 caracteres (letras + números + símbolos)</td>
+                                <td style="padding: 12px;">M&7y!Qw9@Zx4#Lp2</td>
+                                <td style="padding: 12px; color: #10b981;"><strong>34.000 anos</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><em>Fonte: Estimativas baseadas em computadores modernos com poder de processamento de 100 bilhões de tentativas por segundo (Hive Systems, 2026).</em></p>
+                </section>
+
+                <!-- Creating Strong Passwords -->
+                <section>
+                    <h2><i class="fas fa-key"></i> 3. Como Criar Senhas Fortes e Memoráveis</h2>
+                    
+                    <p>Criar senhas fortes não significa necessariamente criar senhas impossíveis de lembrar. Existem técnicas eficazes que combinam segurança e praticidade.</p>
+
+                    <h3>3.1. Regras de Ouro para Senhas Seguras</h3>
+                    
+                    <div class="info-box info-box-success">
+                        <div class="info-box-icon">✅</div>
+                        <div class="info-box-content">
+                            <h4>Checklist de Senha Forte</h4>
+                            <ul style="margin: 0;">
+                                <li>✓ Mínimo de <strong>12 caracteres</strong> (idealmente 16+)</li>
+                                <li>✓ Combinação de letras maiúsculas e minúsculas</li>
+                                <li>✓ Números e símbolos especiais (!, @, #, $, %, etc.)</li>
+                                <li>✓ Não usar informações pessoais (nome, data de nascimento)</li>
+                                <li>✓ Evitar sequências óbvias (123, abc, qwerty)</li>
+                                <li>✓ Não reutilizar senhas entre serviços</li>
+                                <li>✓ Trocar senhas a cada 6-12 meses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>3.2. Método da Frase-Senha (Passphrase)</h3>
+                    <p>Uma técnica eficaz é criar senhas baseadas em frases memoráveis. Exemplo:</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Frase original:</strong> "Eu adoro tomar café todas as manhãs às 7 horas"</p>
+                        <p><strong>Senha gerada:</strong> <code>EatC@t@m@7h!</code></p>
+                        <p><strong>Lógica:</strong> Primeira letra de cada palavra + substituições + símbolos</p>
+                    </div>
+
+                    <h3>3.3. Geradores de Senhas Aleatórias</h3>
+                    <p>Para máxima segurança, use geradores de senhas que criam combinações totalmente aleatórias:</p>
+                    <ul>
+                        <li><strong>Bitwarden:</strong> Gerador integrado gratuito</li>
+                        <li><strong>1Password:</strong> Personalização avançada</li>
+                        <li><strong>LastPass:</strong> Opções de força configuráveis</li>
+                    </ul>
+
+                    <div class="info-box info-box-info">
+                        <div class="info-box-icon">💡</div>
+                        <div class="info-box-content">
+                            <h4>Dica Profissional</h4>
+                            <p>Use senhas aleatórias geradas por gerenciadores para contas críticas (banco, e-mail principal, trabalho) e passphrases memoráveis para contas secundárias.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Password Managers -->
+                <section>
+                    <h2><i class="fas fa-database"></i> 4. Gerenciadores de Senhas: A Solução Definitiva</h2>
+                    
+                    <p>Com dezenas ou centenas de contas online, é humanamente impossível memorizar senhas únicas e fortes para todas elas. É aqui que entram os <strong>gerenciadores de senhas</strong>.</p>
+
+                    <h3>4.1. O Que São e Como Funcionam</h3>
+                    <p>Gerenciadores de senhas são aplicativos que armazenam todas as suas credenciais de forma criptografada. Você precisa lembrar apenas de <strong>uma senha mestra</strong> para acessar todas as outras.</p>
+
+                    <h3>4.2. Principais Benefícios</h3>
+                    <ul>
+                        <li><strong>Segurança Máxima:</strong> Criptografia AES-256 bits (padrão militar)</li>
+                        <li><strong>Conveniência:</strong> Preenchimento automático de formulários</li>
+                        <li><strong>Sincronização:</strong> Acesso em todos os dispositivos</li>
+                        <li><strong>Auditoria:</strong> Identifica senhas fracas ou reutilizadas</li>
+                        <li><strong>Compartilhamento Seguro:</strong> Envie credenciais com segurança</li>
+                    </ul>
+
+                    <h3>4.3. Melhores Gerenciadores de Senhas (2026)</h3>
+
+                    <table style="width: 100%; margin: 20px 0; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: var(--primary-color); color: white;">
+                                <th style="padding: 12px; text-align: left;">Gerenciador</th>
+                                <th style="padding: 12px; text-align: left;">Preço</th>
+                                <th style="padding: 12px; text-align: left;">Destaque</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: #f9fafb;">
+                                <td style="padding: 12px;"><strong>Bitwarden</strong></td>
+                                <td style="padding: 12px;">Gratuito / R$ 40/ano</td>
+                                <td style="padding: 12px;">Open-source, melhor custo-benefício</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px;"><strong>1Password</strong></td>
+                                <td style="padding: 12px;">R$ 12/mês</td>
+                                <td style="padding: 12px;">Interface intuitiva, ideal para famílias</td>
+                            </tr>
+                            <tr style="background: #f9fafb;">
+                                <td style="padding: 12px;"><strong>LastPass</strong></td>
+                                <td style="padding: 12px;">Gratuito / R$ 15/mês</td>
+                                <td style="padding: 12px;">Plano gratuito robusto</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px;"><strong>Dashlane</strong></td>
+                                <td style="padding: 12px;">R$ 20/mês</td>
+                                <td style="padding: 12px;">VPN incluída, dark web monitoring</td>
+                            </tr>
+                            <tr style="background: #f9fafb;">
+                                <td style="padding: 12px;"><strong>NordPass</strong></td>
+                                <td style="padding: 12px;">R$ 8/mês</td>
+                                <td style="padding: 12px;">Mesma empresa do NordVPN</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="info-box info-box-warning">
+                        <div class="info-box-icon">⚠️</div>
+                        <div class="info-box-content">
+                            <h4>Atenção: Não Use o Gerenciador do Navegador para Dados Críticos</h4>
+                            <p>Gerenciadores integrados (Chrome, Firefox) são convenientes, mas menos seguros que soluções dedicadas. Use-os apenas para contas não-críticas.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Multi-Factor Authentication -->
+                <section>
+                    <h2><i class="fas fa-mobile-alt"></i> 5. Autenticação Multifator (MFA): Camada Extra de Segurança</h2>
+                    
+                    <p>Mesmo com senhas fortes, existe sempre o risco de elas serem comprometidas. É por isso que a <strong>autenticação multifator (MFA)</strong>, também conhecida como autenticação de dois fatores (2FA), se tornou essencial.</p>
+
+                    <h3>5.1. Como Funciona</h3>
+                    <p>MFA adiciona uma segunda camada de verificação além da senha. Geralmente é algo que você:</p>
+                    <ul>
+                        <li><strong>Sabe:</strong> Senha, PIN</li>
+                        <li><strong>Tem:</strong> Celular, token físico, chave de segurança</li>
+                        <li><strong>É:</strong> Biometria (impressão digital, reconhecimento facial)</li>
+                    </ul>
+
+                    <h3>5.2. Tipos de MFA</h3>
+
+                    <h4>5.2.1. SMS (menos seguro)</h4>
+                    <p>Código enviado por mensagem de texto. <strong>Não recomendado</strong> devido a vulnerabilidades como SIM swapping.</p>
+
+                    <h4>5.2.2. Aplicativos Autenticadores (recomendado)</h4>
+                    <p>Geram códigos temporários offline. Exemplos:</p>
+                    <ul>
+                        <li><strong>Google Authenticator</strong></li>
+                        <li><strong>Microsoft Authenticator</strong></li>
+                        <li><strong>Authy</strong> (com backup na nuvem)</li>
+                        <li><strong>2FAS</strong> (open-source)</li>
+                    </ul>
+
+                    <h4>5.2.3. Chaves de Segurança Físicas (mais seguro)</h4>
+                    <p>Dispositivos USB que você conecta ao computador ou aproxima do celular:</p>
+                    <ul>
+                        <li><strong>YubiKey</strong> (mais popular)</li>
+                        <li><strong>Google Titan Security Key</strong></li>
+                        <li><strong>Nitrokey</strong></li>
+                    </ul>
+
+                    <div class="info-box info-box-success">
+                        <div class="info-box-icon">🔐</div>
+                        <div class="info-box-content">
+                            <h4>Estatística Impressionante</h4>
+                            <p>Segundo o Google (2025), contas com MFA habilitado são <strong>99,9% menos propensas</strong> a serem invadidas, mesmo com a senha comprometida.</p>
+                        </div>
+                    </div>
+
+                    <h3>5.3. Onde Ativar MFA</h3>
+                    <p>Ative MFA prioritariamente em:</p>
+                    <ul>
+                        <li>✓ E-mail principal (Gmail, Outlook)</li>
+                        <li>✓ Bancos e fintechs</li>
+                        <li>✓ Redes sociais (Facebook, Instagram, Twitter)</li>
+                        <li>✓ Serviços de nuvem (Google Drive, Dropbox, iCloud)</li>
+                        <li>✓ Gerenciador de senhas</li>
+                        <li>✓ Contas de trabalho</li>
+                    </ul>
+                </section>
+
+                <!-- Common Mistakes -->
+                <section>
+                    <h2><i class="fas fa-times-circle"></i> 6. Erros Comuns que Comprometem sua Segurança</h2>
+                    
+                    <p>Mesmo pessoas conscientes sobre segurança cometem erros que podem ser explorados por atacantes. Veja os mais comuns:</p>
+
+                    <h3>6.1. Compartilhar Senhas por Texto/E-mail</h3>
+                    <p>❌ <strong>Nunca</strong> envie senhas por WhatsApp, SMS, e-mail ou anotações físicas. Use recursos de compartilhamento seguro de gerenciadores de senhas.</p>
+
+                    <h3>6.2. Anotar Senhas em Locais Óbvios</h3>
+                    <p>❌ Post-its no monitor, cadernos na mesa, arquivos de texto não criptografados. Se precisar anotar, use um cofre físico trancado.</p>
+
+                    <h3>6.3. Usar a Mesma Senha em Múltiplos Sites</h3>
+                    <p>❌ Se um site sofrer vazamento, todas as suas contas ficam vulneráveis. Use senhas únicas sempre.</p>
+
+                    <h3>6.4. Ignorar Avisos de Vazamento</h3>
+                    <p>❌ Serviços como <strong>Have I Been Pwned</strong> (haveibeenpwned.com) mostram se seu e-mail apareceu em vazamentos. Verifique regularmente!</p>
+
+                    <h3>6.5. Não Fazer Logout em Computadores Públicos</h3>
+                    <p>❌ Sempre encerre sessões em dispositivos compartilhados e use modo anônimo quando possível.</p>
+
+                    <div class="info-box info-box-danger">
+                        <div class="info-box-icon">🚨</div>
+                        <div class="info-box-content">
+                            <h4>Caso Real: Ataque de Credential Stuffing</h4>
+                            <p>Em 2024, <strong>15 mil contas da Disney+</strong> foram hackeadas usando credenciais vazadas de outros sites. Usuários que reutilizavam senhas perderam acesso às contas.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Best Practices -->
+                <section>
+                    <h2><i class="fas fa-check-double"></i> 7. Melhores Práticas e Recomendações</h2>
+                    
+                    <p>Para manter suas contas seguras a longo prazo, siga estas práticas recomendadas:</p>
+
+                    <h3>7.1. Checklist de Segurança Mensal</h3>
+                    <ul>
+                        <li>□ Verificar se há vazamentos no Have I Been Pwned</li>
+                        <li>□ Revisar acessos e dispositivos conectados às suas contas</li>
+                        <li>□ Atualizar senhas de contas críticas (a cada 6 meses)</li>
+                        <li>□ Verificar códigos de backup do MFA</li>
+                        <li>□ Fazer backup do gerenciador de senhas</li>
+                    </ul>
+
+                    <h3>7.2. Configurações de Recuperação</h3>
+                    <p>Configure opções de recuperação seguras:</p>
+                    <ul>
+                        <li>Use um <strong>e-mail secundário</strong> dedicado apenas para recuperação</li>
+                        <li>Salve <strong>códigos de backup</strong> do MFA em local seguro (físico ou criptografado)</li>
+                        <li>Configure <strong>perguntas de segurança</strong> com respostas falsas memoráveis (ex: "Cidade onde nasceu" → resposta: "Pizza123")</li>
+                    </ul>
+
+                    <h3>7.3. Educação Contínua</h3>
+                    <p>Mantenha-se atualizado sobre ameaças e técnicas de proteção:</p>
+                    <ul>
+                        <li>Siga blogs de segurança como <strong>Kaspersky Daily</strong>, <strong>KrebsOnSecurity</strong></li>
+                        <li>Acompanhe alertas do <strong>CERT.br</strong></li>
+                        <li>Participe de treinamentos corporativos de segurança</li>
+                    </ul>
+
+                    <div class="info-box info-box-info">
+                        <div class="info-box-icon">💡</div>
+                        <div class="info-box-content">
+                            <h4>Cultura de Segurança</h4>
+                            <p>Segurança não é um evento único, mas um hábito contínuo. Invista 10 minutos por mês para revisar suas práticas e manter-se protegido.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Conclusion -->
+                <section>
+                    <h2><i class="fas fa-flag-checkered"></i> 8. Conclusão</h2>
+                    
+                    <p>A autenticação segura é a base da sua segurança digital. <strong>Senhas fortes, únicas e gerenciadas adequadamente</strong>, combinadas com <strong>autenticação multifator</strong>, formam uma defesa quase impenetrável contra a maioria dos ataques.</p>
+
+                    <p>Não é mais aceitável usar "senha123" ou reutilizar credenciais em 2026. Os riscos são altos demais: perda financeira, roubo de identidade, exposição de dados pessoais e profissionais.</p>
+
+                    <div class="highlight-box">
+                        <h4>🎯 Ações Práticas para Hoje:</h4>
+                        <ol>
+                            <li>Instale um gerenciador de senhas (recomendo <strong>Bitwarden</strong> para iniciantes)</li>
+                            <li>Ative MFA em suas 5 contas mais importantes</li>
+                            <li>Verifique se seu e-mail foi vazado em <strong>haveibeenpwned.com</strong></li>
+                            <li>Substitua senhas fracas ou reutilizadas</li>
+                            <li>Salve códigos de backup do MFA em local seguro</li>
+                        </ol>
+                    </div>
+
+                    <p>Lembre-se: <strong>segurança é um investimento, não um custo</strong>. O tempo gasto hoje protegendo suas contas pode evitar dores de cabeça enormes no futuro.</p>
+
+                    <p>Comece pequeno, mas comece hoje. Sua identidade digital agradece! 🔐</p>
+                </section>
+
+                <!-- References -->
+                <section>
+                    <h2><i class="fas fa-book"></i> Referências</h2>
+                    <ol>
+                        <li>NIST Special Publication 800-63B - Digital Identity Guidelines (2024)</li>
+                        <li>Kaspersky Security Bulletin 2025 - Password Security Report</li>
+                        <li>Verizon Data Breach Investigations Report (2025)</li>
+                        <li>Google Security Blog - The Value of Security Keys (2025)</li>
+                        <li>Hive Systems - Password Security Table (2026)</li>
+                        <li>Microsoft Security Intelligence Report (2025)</li>
+                        <li>OWASP Authentication Cheat Sheet (2024)</li>
+                        <li>Have I Been Pwned - Troy Hunt (2026)</li>
+                        <li>Bitwarden Open Source Password Manager Documentation</li>
+                        <li>CERT.br - Cartilha de Segurança para Internet (2025)</li>
+                    </ol>
+                </section>
+
+                <!-- Author Info -->
+                <section class="author-info">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="author-details">
+                        <h3>Sobre o Autor</h3>
+                        <p>Artigo desenvolvido pela equipe do <strong>TechSec Blog</strong>, especializada em segurança da informação, privacidade digital e tecnologia. Nosso objetivo é educar e conscientizar sobre boas práticas de segurança no mundo digital.</p>
+                        <p><i class="fas fa-envelope"></i> Contato: <a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a></p>
+                    </div>
+                </section>
+
+                <!-- Related Articles -->
+                <section class="related-articles">
+                    <h2><i class="fas fa-newspaper"></i> Artigos Relacionados</h2>
+                    <div class="related-grid">
+                        <a href="artigo.html" class="related-card">
+                            <div class="related-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                            <div class="related-content">
+                                <h3>Segurança da Informação na Era Digital</h3>
+                                <p>Desafios, ameaças e perspectivas para proteção de dados no mundo conectado.</p>
+                            </div>
+                        </a>
+                        <a href="criptografia.html" class="related-card">
+                            <div class="related-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                            <div class="related-content">
+                                <h3>Criptografia Moderna: Protegendo Dados em Trânsito</h3>
+                                <p>Entenda como algoritmos criptográficos protegem suas informações online.</p>
+                            </div>
+                        </a>
+                        <a href="privacidade.html" class="related-card">
+                            <div class="related-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                            <div class="related-content">
+                                <h3>Privacidade Online: Guia Completo</h3>
+                                <p>Aprenda a proteger seus dados pessoais na internet.</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Comments Section -->
+                <section class="comments-section">
+                    <h2><i class="fas fa-comments"></i> Comentários</h2>
+                    <p>Tem dúvidas ou sugestões sobre o artigo? Entre em contato conosco!</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a></p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shield-alt"></i> TechSec Blog</h3>
+                    <p>Seu guia confiável sobre tecnologia, segurança da informação e transformação digital.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="index.html#artigos">Segurança</a></li>
+                        <li><a href="index.html#artigos">Privacidade</a></li>
+                        <li><a href="index.html#artigos">Criptografia</a></li>
+                        <li><a href="index.html#artigos">LGPD</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a></p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechSec Blog. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog sobre tecnologia, segurança da informação e transformação digital">
+    <title>TechSec Blog - Tecnologia e Segurança da Informação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>TechSec Blog</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Tecnologia & Segurança Digital</h1>
+                <p class="hero-subtitle">Explorando o mundo da cibersegurança, proteção de dados e transformação digital</p>
+                <a href="#artigos" class="btn btn-primary">Explorar Artigos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-section" id="artigos">
+        <div class="container">
+            <h2 class="section-title">Artigos Publicados</h2>
+            
+            <!-- Artigo Principal -->
+            <div class="featured-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=600&fit=crop" alt="Segurança da Informação">
+                    <span class="article-badge">Destaque</span>
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar"></i> 11 de Fevereiro, 2026</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 15 min de leitura</span>
+                        <span class="category"><i class="fas fa-tag"></i> Segurança</span>
+                    </div>
+                    <h2 class="article-title">Segurança da Informação na Era Digital: Desafios e Perspectivas</h2>
+                    <p class="article-excerpt">
+                        Sabe aquela sensação estranha quando você pensa em quantas informações pessoais estão espalhadas pela internet? Pois é, não é só você que se preocupa com isso. Vivemos numa era onde praticamente tudo que fazemos deixa um rastro digital...
+                    </p>
+                    <a href="artigo.html" class="btn btn-secondary">Ler Artigo Completo <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Grid de Artigos Adicionais -->
+            <div style="margin-top: 4rem;">
+                <h3 style="font-size: 1.75rem; margin-bottom: 2rem; text-align: center; color: #1e293b;">Mais Artigos</h3>
+                <div class="topics-grid">
+                    <!-- NOVOS ARTIGOS - 02 DE JUNHO 2026 -->
+                    <div class="article-card" onclick="window.location.href='autenticacao-senhas.html'" style="cursor: pointer; background: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-key" style="font-size: 2rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #1e293b;">Autenticação e Senhas Seguras</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: #64748b;">
+                            <span><i class="far fa-calendar"></i> 02 Jun</span>
+                            <span><i class="far fa-clock"></i> 14 min</span>
+                            <span class="badge" style="background: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem;">NOVO</span>
+                        </div>
+                        <p style="color: #64748b; line-height: 1.6; margin-bottom: 1rem;">Aprenda a criar senhas fortes, usar MFA e proteger suas contas online contra acessos não autorizados.</p>
+                        <span style="color: #2563eb; font-weight: 600;">Ler mais →</span>
+                    </div>
+
+                    <div class="article-card" onclick="window.location.href='ataques-ciberneticos.html'" style="cursor: pointer; background: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-bug" style="font-size: 2rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #1e293b;">Ataques Cibernéticos e Como se Proteger</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: #64748b;">
+                            <span><i class="far fa-calendar"></i> 02 Jun</span>
+                            <span><i class="far fa-clock"></i> 16 min</span>
+                            <span class="badge" style="background: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem;">NOVO</span>
+                        </div>
+                        <p style="color: #64748b; line-height: 1.6; margin-bottom: 1rem;">Conheça os principais tipos de ataques hackers, como identificá-los e implementar defesas eficazes.</p>
+                        <span style="color: #2563eb; font-weight: 600;">Ler mais →</span>
+                    </div>
+
+                    <div class="article-card" onclick="window.location.href='criptografia.html'" style="cursor: pointer; background: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-lock" style="font-size: 2rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #1e293b;">Criptografia Moderna</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: #64748b;">
+                            <span><i class="far fa-calendar"></i> 10 Fev</span>
+                            <span><i class="far fa-clock"></i> 12 min</span>
+                        </div>
+                        <p style="color: #64748b; line-height: 1.6; margin-bottom: 1rem;">Entenda como a criptografia protege seus dados no mundo digital - dos algoritmos clássicos às soluções modernas.</p>
+                        <span style="color: #2563eb; font-weight: 600;">Ler mais →</span>
+                    </div>
+
+                    <div class="article-card" onclick="window.location.href='privacidade.html'" style="cursor: pointer; background: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-user-shield" style="font-size: 2rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #1e293b;">Privacidade Online</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: #64748b;">
+                            <span><i class="far fa-calendar"></i> 09 Fev</span>
+                            <span><i class="far fa-clock"></i> 14 min</span>
+                        </div>
+                        <p style="color: #64748b; line-height: 1.6; margin-bottom: 1rem;">Guia completo para proteger sua identidade digital em redes sociais, navegação e comunicações online.</p>
+                        <span style="color: #2563eb; font-weight: 600;">Ler mais →</span>
+                    </div>
+
+                    <div class="article-card" onclick="window.location.href='lgpd.html'" style="cursor: pointer; background: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-balance-scale" style="font-size: 2rem; color: white;"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #1e293b;">LGPD na Prática</h3>
+                        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: #64748b;">
+                            <span><i class="far fa-calendar"></i> 08 Fev</span>
+                            <span><i class="far fa-clock"></i> 16 min</span>
+                        </div>
+                        <p style="color: #64748b; line-height: 1.6; margin-bottom: 1rem;">Guia completo da Lei Geral de Proteção de Dados brasileira para empresas e indivíduos.</p>
+                        <span style="color: #2563eb; font-weight: 600;">Ler mais →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre o Blog</h2>
+                    <p>O TechSec Blog é um espaço dedicado a compartilhar conhecimento sobre segurança da informação, tecnologia e transformação digital. Aqui você encontra artigos aprofundados, análises críticas e reflexões sobre os desafios da proteção de dados na era moderna.</p>
+                    <p>Nosso objetivo é democratizar o conhecimento técnico, tornando conceitos complexos acessíveis para estudantes, profissionais e entusiastas da área de tecnologia.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-newspaper"></i>
+                        <h3>Artigos</h3>
+                        <p class="stat-number">6</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Leitores</h3>
+                        <p class="stat-number">5k+</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Tempo Leitura</h3>
+                        <p class="stat-number">87 min</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="topics-section">
+        <div class="container">
+            <h2 class="section-title">Tópicos Populares</h2>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Criptografia</h3>
+                    <p>Técnicas e algoritmos de proteção de dados</p>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-bug"></i>
+                    <h3>Malware</h3>
+                    <p>Ameaças digitais e como se proteger</p>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-shield-virus"></i>
+                    <h3>Ransomware</h3>
+                    <p>Prevenção e resposta a ataques</p>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>Privacidade</h3>
+                    <p>Proteção de dados pessoais e LGPD</p>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Redes</h3>
+                    <p>Segurança em infraestrutura de rede</p>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Security</h3>
+                    <p>Proteção em ambientes na nuvem</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Assine Nossa Newsletter</h2>
+                <p>Receba os melhores artigos sobre segurança e tecnologia diretamente no seu e-mail</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:danielebertelliprado@gmail.com">danielebertelliprado@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-share-alt"></i>
+                        <div>
+                            <h4>Redes Sociais</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shield-alt"></i> TechSec Blog</h3>
+                    <p>Compartilhando conhecimento sobre segurança da informação e tecnologia desde 2026.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#artigos">Artigos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Criptografia</a></li>
+                        <li><a href="#">LGPD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechSec Blog. Todos os direitos reservados. | Contato: <a href="mailto:danielebertelliprado@gmail.com" style="color: #94a3b8;">danielebertelliprado@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
